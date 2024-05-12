@@ -307,7 +307,7 @@ function Library:Initiate()
         Frame.Size = UDim2.new(1, 0, 0, 25)
         ImageButton.Parent = Frame
         ImageButton.BackgroundColor3 =Color3.fromRGB(255, 255, 255)
-        ImageButton.ImageColor3=(CategoryAmount==1 and Color3.fromRGB(0,122,255))or Color3.fromRGB(255, 255, 255)
+        ImageButton.ImageColor3=(CategoryAmount==1 and Color3.fromRGB(255,255,255))or Color3.fromRGB(255, 255, 255)
         ImageButton.BackgroundTransparency = 1.000
         ImageButton.BorderSizePixel = 0
         ImageButton.Size = UDim2.new(0.200000003, 0, 1.2, 0)
@@ -747,7 +747,7 @@ function Library:Initiate()
                     UICorner_10.Parent = MainButton_2
                     UICorner_10.CornerRadius=UDim.new(0,12)
                     if Toggled then 
-                        MainButton.BackgroundColor3=Color3.fromRGB(255,255,255)
+                        MainButton.BackgroundColor3=Color3.fromRGB(100,100,100)
                         TweenService:Create(MainButton_2, TweenInfo.new(0.1), {Position =  UDim2.new(0.93810195, 0, 0.5, 0)}):Play()
                     end;
                     if Callback then 
@@ -756,7 +756,7 @@ function Library:Initiate()
                     local function func(Forced)
                         Toggled=not Toggled;
                         if Toggled then 
-                            MainButton.BackgroundColor3=Color3.fromRGB(255,255,255)
+                            MainButton.BackgroundColor3=Color3.fromRGB(100,100,100)
                             TweenService:Create(MainButton_2, TweenInfo.new(0.1), {Position = UDim2.new(0.93810195, 0, 0.5, 0)}):Play()
                         else
                             MainButton.BackgroundColor3=Color3.fromRGB(15,15,15)
@@ -772,7 +772,7 @@ function Library:Initiate()
                     function ToggleTable:Toggle()
                         Toggled=not Toggled;
                         if Toggled then 
-                            MainButton.BackgroundColor3=Color3.fromRGB(255,255,255)
+                            MainButton.BackgroundColor3=Color3.fromRGB(100,100,100)
                             TweenService:Create(MainButton_2, TweenInfo.new(0.1), {Position = UDim2.new(0.93810195, 0, 0.5, 0)}):Play()
                         else
                             MainButton.BackgroundColor3=Color3.fromRGB(15,15,15)
@@ -1673,7 +1673,7 @@ function Library:Initiate()
     ImageButton_2.Size = UDim2.new(1, 0, 0.35, 0)
     ImageButton_2.AutoButtonColor = false
     ImageButton_2.Image = "rbxassetid://17465392625"
-    ImageButton_2.ImageColor3 = Color3.fromRGB(245, 255, 255)
+   
     ImageButton_2.Active = false
 
 
