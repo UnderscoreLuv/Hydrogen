@@ -1,3 +1,4 @@
+--ui 
 local Library={};
 local HelpSections={}
 getgenv().PlayerDropType='Both'
@@ -307,7 +308,7 @@ function Library:Initiate()
         Frame.Size = UDim2.new(1, 0, 0, 25)
         ImageButton.Parent = Frame
         ImageButton.BackgroundColor3 =Color3.fromRGB(255, 255, 255)
-        ImageButton.ImageColor3=(CategoryAmount==1 and Color3.fromRGB(0,122,255))or Color3.fromRGB(255, 255, 255)
+        ImageButton.ImageColor3=(CategoryAmount==1 and Color3.fromRGB(255,255,255))or Color3.fromRGB(255, 255, 255)
         ImageButton.BackgroundTransparency = 1.000
         ImageButton.BorderSizePixel = 0
         ImageButton.Size = UDim2.new(0.200000003, 0, 1.2, 0)
@@ -322,7 +323,7 @@ function Library:Initiate()
         TextButton.AutoButtonColor = false
         TextButton.Font = Enum.Font.GothamBold
         TextButton.Text = Name
-        TextButton.TextColor3 = (CategoryAmount==1 and Color3.fromRGB(0,122,255))or Color3.fromRGB(255, 255, 255)
+        TextButton.TextColor3 = (CategoryAmount==1 and Color3.fromRGB(255,255,255))or Color3.fromRGB(255, 255, 255)
         TextButton.TextSize = 13
         TextButton.ClipsDescendants=true;
         TextButton.TextXAlignment = Enum.TextXAlignment.Left
@@ -335,10 +336,10 @@ function Library:Initiate()
                 elseif v:IsA'Frame'and v:FindFirstChild'TextButton'and v:FindFirstChild'ImageButton'then
                     Sections:FindFirstChild(tostring(v.TextButton.Text)).Visible=true;
                     task.spawn(function()
-                        TweenService:Create(ImageButton,TweenInfo.new(0.2),{ImageColor3=Color3.fromRGB(0,122,255)}):Play();
+                        TweenService:Create(ImageButton,TweenInfo.new(0.2),{ImageColor3=Color3.fromRGB(255,255,255)}):Play();
                     end);
                     task.spawn(function()
-                        TweenService:Create(TextButton,TweenInfo.new(0.2),{TextColor3=Color3.fromRGB(0,122,255);}):Play();
+                        TweenService:Create(TextButton,TweenInfo.new(0.2),{TextColor3=Color3.fromRGB(255,255,255);}):Play();
                     end);
                     CurrentTab=ScrollingFrame_2
                 end;
@@ -747,7 +748,7 @@ function Library:Initiate()
                     UICorner_10.Parent = MainButton_2
                     UICorner_10.CornerRadius=UDim.new(0,12)
                     if Toggled then 
-                        MainButton.BackgroundColor3=Color3.fromRGB(0,122,255)
+                        MainButton.BackgroundColor3=Color3.fromRGB(60,60,60)
                         TweenService:Create(MainButton_2, TweenInfo.new(0.1), {Position =  UDim2.new(0.93810195, 0, 0.5, 0)}):Play()
                     end;
                     if Callback then 
@@ -756,7 +757,7 @@ function Library:Initiate()
                     local function func(Forced)
                         Toggled=not Toggled;
                         if Toggled then 
-                            MainButton.BackgroundColor3=Color3.fromRGB(0,122,255)
+                            MainButton.BackgroundColor3=Color3.fromRGB(60,60,60)
                             TweenService:Create(MainButton_2, TweenInfo.new(0.1), {Position = UDim2.new(0.93810195, 0, 0.5, 0)}):Play()
                         else
                             MainButton.BackgroundColor3=Color3.fromRGB(15,15,15)
